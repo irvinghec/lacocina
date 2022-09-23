@@ -1,7 +1,3 @@
-<script setup>
-
-</script>
-
 <template>
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -31,6 +27,7 @@
     </nav>
 </div>
 <br>
+<Slo>
 <div class="card-deck">
 <div class="row row-cols-1 row-cols-md-3 g-4 card-deck">
 
@@ -96,6 +93,7 @@
   </div>
 </div>
 </div>
+</Slo>
 <br><br><br><br><br>
 
   <footer class="footer-distributed">
@@ -140,19 +138,13 @@
   </footer>
 </template>
 
-<style scoped>
-li{
-  cursor: pointer;
-}
-h5{
-  color: black;
-}
-p{
-  color: gray;
-}
-img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-</style>
+<script>
+  import Slo from '@/Slo.vue'
+
+  export default {
+    name: 'App',
+    components: {
+      Slo
+    }
+  }
+</script>
